@@ -1,7 +1,7 @@
 import pygame as pg
 
 class Player(pg.sprite.Sprite):
-    def __init__(self, x, y, c='warrior_m'):
+    def __init__(self, x, y, c='paladin_M'):
         pg.sprite.Sprite.__init__(self)
 
         #self.fname = 'Images/24x32-characters-big-pack-by-Svetlana-Kushnariova/Heroes/Fighter-M-01.png'

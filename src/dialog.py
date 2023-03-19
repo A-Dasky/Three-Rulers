@@ -1,26 +1,5 @@
 import re
 
-def default_ruler_stat():
-    """The default stat for all rulers
-
-    The default stat for all rulers:
-    stat - They are alive
-    allies - Allies are alive
-    meet - You have not met them
-    fight - You have not fought them
-    
-
-    Returns
-    -------
-    dict
-    """
-    return {'stat': True,    # Alive or dead
-            'allies': True,  # Are allies alive or dead
-            'meet': False,    # Have you spoken to them before fighting
-            'fight': False,   # Did choose to fight them / cannot talk during fight
-            'power': True,    # Did you defeat them
-           }
-
 def get_ruler_dialog(who, which, NPC):
     king = NPC['king']
     cler = NPC['cleric']
@@ -367,8 +346,4 @@ def get_ruler_dialog(who, which, NPC):
         return end
     raise
 
-NPC = {'king': default_ruler_stat(),
-       'merchant': default_ruler_stat(),
-       'cleric': default_ruler_stat(),
-       }
 
